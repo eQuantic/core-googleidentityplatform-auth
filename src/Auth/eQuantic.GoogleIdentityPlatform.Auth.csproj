@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>eQuantic Google Identity Platform Auth Library</Description>
+        <Copyright>2023</Copyright>
+        <Authors>eQuantic Systems</Authors>
+        <RootNamespace>eQuantic.GoogleIdentityPlatform.Auth</RootNamespace>
+        <AssemblyTitle>eQuantic.GoogleIdentityPlatform.Auth</AssemblyTitle>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+        <Version>1.0.0.0</Version>
+        <TargetFramework>net7.0</TargetFramework>
+
+        <PackageId>eQuantic.GoogleIdentityPlatform.Auth</PackageId>
+        <PackageTags>eQuantic;Google;Identity;Platform;Authentication;Authorization;Library</PackageTags>
+        <PackageReleaseNotes>Google Identity Platform Auth implementations</PackageReleaseNotes>
+        <PackageProjectUrl>https://github.com/eQuantic/core-googleidentityplatform-auth</PackageProjectUrl>
+        <PackageOutputPath>../artifacts/</PackageOutputPath>
+        <PackageIcon>Icon.png</PackageIcon>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+        <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+        <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+        <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+        <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+        <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+        <RepositoryUrl>https://github.com/eQuantic/core-googleidentityplatform-auth</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FirebaseAdmin" Version="2.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="Icon.png" Pack="true" PackagePath="Icon.png" />
+        <None Include="Icon_details.png" Pack="true" PackagePath="Icon_details.png" />
+        <None Include="Icon_dialog.png" Pack="true" PackagePath="Icon_dialog.png" />
+        <None Include="Icon_list.png" Pack="true" PackagePath="Icon_list.png" />
+        <None Include="../../LICENSE" Pack="true" PackagePath="" />
+        <None Include="../../README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+</Project>
